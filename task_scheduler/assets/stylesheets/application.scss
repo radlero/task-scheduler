@@ -5,7 +5,7 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color: #222;
+$background-color: #dddddd;
 $text-color: #fff;
 
 $background-danger-color-1: #e82711;
@@ -17,19 +17,36 @@ $background-warning-color-2: #ff9618;
 $text-warning-color: #fff;
 
 @-webkit-keyframes status-warning-background {
-  0%   { background-color: $background-warning-color-1; }
-  50%  { background-color: $background-warning-color-2; }
-  100% { background-color: $background-warning-color-1; }
+  0% {
+    background-color: $background-warning-color-1;
+  }
+  50% {
+    background-color: $background-warning-color-2;
+  }
+  100% {
+    background-color: $background-warning-color-1;
+  }
 }
 @-webkit-keyframes status-danger-background {
-  0%   { background-color: $background-danger-color-1; }
-  50%  { background-color: $background-danger-color-2; }
-  100% { background-color: $background-danger-color-1; }
+  0% {
+    background-color: $background-danger-color-1;
+  }
+  50% {
+    background-color: $background-danger-color-2;
+  }
+  100% {
+    background-color: $background-danger-color-1;
+  }
 }
-@mixin animation($animation-name, $duration, $function, $animation-iteration-count:""){
-  -webkit-animation:  $animation-name $duration $function #{$animation-iteration-count};
-  -moz-animation:     $animation-name $duration $function #{$animation-iteration-count};
-  -ms-animation:      $animation-name $duration $function #{$animation-iteration-count};
+@mixin animation(
+  $animation-name,
+  $duration,
+  $function,
+  $animation-iteration-count: ""
+) {
+  -webkit-animation: $animation-name $duration $function #{$animation-iteration-count};
+  -moz-animation: $animation-name $duration $function #{$animation-iteration-count};
+  -ms-animation: $animation-name $duration $function #{$animation-iteration-count};
 }
 
 // ----------------------------------------------------------------------------
@@ -46,10 +63,11 @@ body {
   background-color: $background-color;
   font-size: 20px;
   color: $text-color;
-  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 
@@ -64,7 +82,8 @@ img {
   vertical-align: middle;
 }
 
-img, object {
+img,
+object {
   max-width: 100%;
 }
 
@@ -82,12 +101,18 @@ td {
   vertical-align: middle;
 }
 
-ul, ol {
+ul,
+ol {
   padding: 0;
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
   padding: 0;
   margin: 0;
 }
@@ -118,7 +143,7 @@ h3 {
 
 .icon-background {
   pointer-events: none;
-  width: 100%!important;
+  width: 100% !important;
   height: 100%;
   position: absolute;
   left: 0;
@@ -159,7 +184,8 @@ h3 {
     display: inline-block;
   }
 
-  .title, .more-info {
+  .title,
+  .more-info {
     color: $text-warning-color;
   }
 }
@@ -173,7 +199,8 @@ h3 {
     display: inline-block;
   }
 
-  .title, .more-info {
+  .title,
+  .more-info {
     color: $text-danger-color;
   }
 }
@@ -234,25 +261,33 @@ h3 {
 }
 
 #lean_overlay {
-    position: fixed;
-    z-index:100;
-    top: 0px;
-    left: 0px;
-    height:100%;
-    width:100%;
-    background: #000;
-    display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
 }
 
 #container {
   padding-top: 5px;
 }
 
-
 // ----------------------------------------------------------------------------
 // Clearfix
 // ----------------------------------------------------------------------------
-.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
-
+.clearfix:before,
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}

@@ -1,17 +1,21 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color:  #ec663c;
+$background-color: #ffffff;
 
-$title-color:       rgba(255, 255, 255, 0.7);
-$moreinfo-color:    rgba(255, 255, 255, 0.7);
+$title-color: #000000;
+$text-color: #000000;
+$moreinfo-color: #000000;
 
 // ----------------------------------------------------------------------------
 // Widget-text styles
 // ----------------------------------------------------------------------------
 .widget-text {
-
   background-color: $background-color;
+
+  .text {
+    color: $text-color;
+  }
 
   .title {
     color: $title-color;
@@ -22,11 +26,10 @@ $moreinfo-color:    rgba(255, 255, 255, 0.7);
   }
 
   .updated-at {
-    color: rgba(255, 255, 255, 0.7);
+    color: #000000;
   }
 
-
   &.large h3 {
-    font-size: 65px;
+    font-size: 75px;
   }
 }
