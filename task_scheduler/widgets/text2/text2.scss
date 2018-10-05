@@ -15,6 +15,7 @@ $moreinfo-color: #000000;
 
   .text {
     color: $text-color;
+    font-size: 20px;
   }
   .time {
     color: $text-color;
@@ -34,47 +35,35 @@ $moreinfo-color: #000000;
   &.large h3 {
     font-size: 75px;
   }
-}
-body {
-  background: linear-gradient(
-    155deg,
-    rgba(85, 239, 203, 1) 0%,
-    rgba(30, 87, 153, 1) 0%,
-    rgba(85, 239, 203, 1) 0%,
-    rgba(91, 202, 255, 1) 100%
-  );
-  color: #f7f7f7;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-}
-
-.button {
-  flex: 1 1 auto;
-  margin: 10px;
-  padding: 20px;
-  border: 3px solid #f7f7f7;
-  text-align: left;
-  text-transform: uppercase;
-  position: relative;
-  overflow: hidden;
-  transition: 0.3s;
-}
-.button2 {
-  flex-wrap: nowrap;
-  position: relative;
-  overflow: hidden;
-  width: 7rem;
-  color: #5585ff;
-  border: 2px solid #5585ff;
-  background-color: transparent;
-  cursor: pointer;
-  text-align: center;
-  line-height: 2;
-  margin: 0;
-  padding: 0;
-  border-radius: 1.5rem;
-  font-size: 1.125rem;
-  text-transform: lowercase;
-  outline: none;
-  transition: transform 0.125s;
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    border: 3px solid #f7f7f7;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  .button2 {
+    position: relative;
+    overflow: hidden;
+    width: 7rem;
+    color: #5585ff;
+    border: 2px solid #5585ff;
+    background-color: transparent;
+    text-align: center;
+    line-height: 2;
+    margin-left: auto;
+    padding: 0;
+    border-radius: 1.5rem;
+    font-size: 1.125rem;
+    text-transform: lowercase;
+    outline: none;
+    transition: transform 0.125s;
+  }
 }
