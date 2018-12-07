@@ -1,33 +1,19 @@
+<script type='text/javascript'>
+$(function() {
+  Dashing.widget_base_dimensions = [50, 50]
+  Dashing.numColumns = 20
+});
+</script>
+
 <% content_for :title do %>Automated Task Scheduler<% end %>
 <div class="gridster">
   <ul>
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
-      <div data-id="station1" data-view="Text" data-title="Station 1" data-text1="Tyre Change" data-text2 ="Car Health Check" data-text3 ="Service" data-text4 ="Tea Break" data-text5 ="Service" data-text6 ="Gearbox Replacement" data-time ="9:00" data-time2 ="10:00" data-time3 = "11:00" data-time4 = "12:00" data-time5 ="13:00" data-time6 = "14:00" data-moreinfo="" ></div>
+    <li data-row="1" data-col="1" data-sizex="10" data-sizey="10">
+      <div data-id="station1" data-view="List" data-unordered="true" data-title="Station 1" data-moreinfo="TASKS1"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
-      <div data-id="station2" data-view="Text2" data-title="Station 2" data-text1="Tyre Change" data-text2 ="Service" data-text3 ="Tea Break" data-text4 ="Mot"
-       data-time ="9:00" data-time2 ="10:00" data-time3 = "11:00" data-time4 = "12:00" data-time5 ="13:00" data-time6 = "14:00" data-moreinfo="" ></div>
+    <li data-row="1" data-col="1" data-sizex="10" data-sizey="10">
+      <div data-id="station2" data-view="List" data-unordered="true" data-title="Station 2" data-moreinfo="TASKS2" style="background-color:#33aa77"></div>
     </li>
-
-
-    <!-- <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="synergy" data-view="Meter" data-title="Synergy" data-height="200" data-width="200" data-min="0" data-max="100" data-suffix="%"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
-      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Buzzwords" data-moreinfo="# of times said around the office"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="valuation" data-view="Number" data-title="Current Valuation" data-moreinfo="In billions" data-prefix="$"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#ff9618"></div>
-    </li> -->
   </ul>
-  <!-- <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center> -->
 </div>
-
-<!-- curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "IT IS WORKING", time:"21:00" }' \http://localhost:3030/widgets/station1 -->

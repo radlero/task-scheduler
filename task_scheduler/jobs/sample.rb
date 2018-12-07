@@ -15,12 +15,11 @@ SCHEDULER.every "30s", :first_in => 0 do |job|
 
 stations = get_data
 
-# Send Data
-  stations['tasks'].each do |task|
-    data = {
-      text2: task['task'],
-      time2: task['time']
-    }
-    send_event(task['station'], data)
+items = stations["tasks"].map{ |a|  {task: a["task"], time: a["time"], station: a["station"]}}
+
+
+
+pp items
+  send_event("station1", {items: items.select { |b| b[:station] == "station1"}})
+  send_event("station2", {items: items.select { |b| b[:station] == "station2"}})
   end
-end
