@@ -11,7 +11,7 @@ def get_data
   JSON.parse(response.body)
 end
 
-SCHEDULER.every "30s", :first_in => 0 do |job|
+SCHEDULER.every "5s", :first_in => 0 do |job|
 
 stations = get_data
 
@@ -20,6 +20,6 @@ items = stations["tasks"].map{ |a|  {task: a["task"], time: a["time"], station: 
 
 
 pp items
-  send_event("station1", {items: items.select { |b| b[:station] == "station1"}})
-  send_event("station2", {items: items.select { |b| b[:station] == "station2"}})
+  send_event("station1", {items: items.select { |b| b[:station] == "station1"} && items.sort_by{ |b| b[:time]}})
+  send_event("station2", {items: items.select { |b| b[:station] == "station2"} && items.sort_by{ |b| b[:time]}})
   end
