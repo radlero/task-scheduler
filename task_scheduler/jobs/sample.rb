@@ -20,6 +20,6 @@ items = stations["tasks"].map{ |a|  {task: a["task"], time: a["time"], station: 
 
 
 pp items
-  send_event("station1", {items: items.select { |b| b[:station] == "station1"} && items.sort_by{ |b| b[:time]}})
-  send_event("station2", {items: items.select { |b| b[:station] == "station2"} && items.sort_by{ |b| b[:time]}})
+  send_event("station1", {items: items.select { |b| b[:station] == "station1"}.sort_by{ |b| b[:time]}})
+  send_event("station2", {items: items.select { |b| b[:station] == "station2"}.sort_by{ |b| b[:time]}})
   end
