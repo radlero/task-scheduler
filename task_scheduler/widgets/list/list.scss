@@ -21,7 +21,7 @@ $moreinfo-color: #000;
 
   ol,
   ul {
-    margin: 0 15px;
+    margin: 45px;
     text-align: left;
     color: $label-color;
   }
@@ -31,7 +31,7 @@ $moreinfo-color: #000;
   }
 
   li {
-    margin-bottom: 5px;
+    margin-bottom: 30px;
   }
 
   .list-nostyle {
@@ -52,7 +52,14 @@ $moreinfo-color: #000;
   .updated-at {
     color: rgba(0, 0, 0, 0.3);
   }
-
+  .time {
+    float: right;
+    width: 80px;
+    padding: 3px;
+    border: 3px solid gray;
+    border-radius: 20px;
+    display: inline-flex;
+  }
   .more-info {
     color: $moreinfo-color;
   }
