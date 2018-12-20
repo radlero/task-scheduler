@@ -15,7 +15,7 @@ SCHEDULER.every "5s", :first_in => 0 do |job|
 
 stations = get_data
 
-items = stations["tasks"].map{ |a|  {task: a["task"], time: a["time"], station: a["station"]}}
+items = stations["tasks"].map{ |a|  {task: a["task"], time: a["time"], station: a["station"], importance: a["importance"], make: a["make"], regnum: a["regnum"]}}
 
 
 

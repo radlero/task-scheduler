@@ -21,7 +21,7 @@ $moreinfo-color: #000;
 
   ol,
   ul {
-    margin: 45px;
+    margin: 35px;
     text-align: left;
     color: $label-color;
   }
@@ -31,7 +31,8 @@ $moreinfo-color: #000;
   }
 
   li {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    font-weight: 600;
   }
 
   .list-nostyle {
@@ -54,11 +55,27 @@ $moreinfo-color: #000;
   }
   .time {
     float: right;
-    width: 80px;
-    padding: 3px;
+    text-align: center;
+    width: auto;
+    padding: 5px;
     border: 3px solid gray;
-    border-radius: 20px;
-    display: inline-flex;
+    border-radius: 10px;
+  }
+  .make {
+    float: right;
+    text-align: center;
+    width: 80px;
+    padding: 5px;
+    border: 3px solid red;
+    border-radius: 10px;
+  }
+  .regnum {
+    float: left;
+    text-align: center;
+    width: 120px;
+    padding: 5px;
+    border: 3px solid green;
+    border-radius: 10px;
   }
   .more-info {
     color: $moreinfo-color;
