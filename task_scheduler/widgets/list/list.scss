@@ -34,7 +34,9 @@ $moreinfo-color: #000;
     margin-bottom: 50px;
     font-weight: 600;
   }
-
+  .task {
+    font-size: 25px;
+  }
   .list-nostyle {
     list-style: none;
   }
@@ -62,6 +64,7 @@ $moreinfo-color: #000;
     border-radius: 10px;
   }
   .make {
+    margin-left: 10px;
     float: right;
     text-align: center;
     width: 80px;
@@ -70,6 +73,7 @@ $moreinfo-color: #000;
     border-radius: 10px;
   }
   .regnum {
+    margin-right: 10px;
     float: left;
     text-align: center;
     width: 120px;
