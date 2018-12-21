@@ -15,6 +15,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    crass (1.0.4)
     daemons (1.2.6)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
@@ -34,15 +35,21 @@ GEM
     http_parser.rb (0.6.0)
     i18n (1.1.0)
       concurrent-ruby (~> 1.0)
+    loofah (2.2.3)
+      crass (~> 1.0.2)
+      nokogiri (>= 1.5.9)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
+    mini_portile2 (2.4.0)
     minitest (5.11.3)
     multi_json (1.13.1)
     multipart-post (2.0.0)
     mustermann (1.0.3)
     naught (1.1.0)
+    nokogiri (1.9.1)
+      mini_portile2 (~> 2.4.0)
     public_suffix (3.0.3)
-    rack (2.0.5)
+    rack (2.0.6)
     rack-protection (2.0.4)
       rack
     rufus-scheduler (3.4.2)
@@ -104,8 +111,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  loofah (>= 2.2.3)
+  rack (>= 2.0.6)
   smashing
   twitter (>= 5.9.0)
 
 BUNDLED WITH
-   1.16.3
+   1.16.6

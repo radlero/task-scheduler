@@ -4,3 +4,5 @@ gem 'smashing'
 
 ## Remove this if you don't need a twitter widget.
 gem 'twitter', '>= 5.9.0'
+gem "loofah", ">= 2.2.3"
+gem "rack", ">= 2.0.6"
