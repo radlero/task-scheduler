@@ -10,6 +10,7 @@ GEM
       public_suffix (>= 2.0.2, < 4.0)
     backports (3.11.4)
     buftok (0.2.0)
+    coderay (1.1.2)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -40,6 +41,7 @@ GEM
       nokogiri (>= 1.5.9)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
+    method_source (0.9.2)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
     multi_json (1.13.1)
@@ -48,6 +50,9 @@ GEM
     naught (1.1.0)
     nokogiri (1.9.1)
       mini_portile2 (~> 2.4.0)
+    pry (0.12.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
     public_suffix (3.0.3)
     rack (2.0.6)
     rack-protection (2.0.4)
@@ -112,6 +117,7 @@ PLATFORMS
 
 DEPENDENCIES
   loofah (>= 2.2.3)
+  pry
   rack (>= 2.0.6)
   smashing
   twitter (>= 5.9.0)
